@@ -1,87 +1,180 @@
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@font-face{
+  src:url('../fonts/Limelight-Regular.tff');
+  font-family:limelight;
 }
-
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+body{
+  height:100%;
+  margin-left:20px;
+  background-color:#222;
+  color:#f5f5f5;
+  font-family:quicksand;
 }
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
+.navbar{
+  font-size:1.5em;
+  background-color:#222;
+  height:4em;
 }
-
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+ul > li > a{
+  color:#c00000 !important;
 }
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
+.tel{
+  color:#f5f5f5;
+  /*margin-right:30px;*/
 }
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.tel:hover{
+  text-decoration:none;
 }
-
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+.fa-phone-square{
+  color:#c00000;
 }
-.container-narrow > hr {
-  margin: 30px 0;
+.nav{
+  margin-top:15px;
 }
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+.navbar-brand{
+  color:#f5f5f5 !important;
+  font-size:2em;
+  font-family:limelight;
+  margin-right:40px;
 }
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+.bg{
+  border:3px solid #c00000;
+  border-radius:50%;
+  background-color:#c00000;
 }
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
+.navbar-text{
+  font-size:1em;
+  margin-right:2%;
+  margin-top:25px;
 }
-.marketing p + h4 {
-  margin-top: 28px;
+a.active{
+  border-bottom:2px solid #f5f5f5;
 }
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+h2{
+  font-size:2.5em;
+  color:#c00000;
+}
+h4{
+  font-size:2em;
+  font-family:limelight;
+}
+#about{
+  margin-top:100px;
+  margin-right:50px;
+  margin-bottom:100px;
+}
+#about p, li{
+  font-size:1.2em;
+}
+#about li, .offer{
+  margin-left:10%;
+}
+#history{
+  margin-bottom:50px;
+}
+#team{
+  margin-bottom:100px;
+}
+#team p{
+  font-size:1.15em;
+}
+#team img{
+  border-radius:10px;
+}
+#team ul{
+  list-style-type:none;
+}
+.brit img, .amanda img, .jeanne img, .patti img{
+  float:right;
+  margin-left:10px;
+  margin-right:20px;
+}
+.amanda p, .jeanne p, .patti p{
+  margin-bottom:100px;
+}
+.maggie img, .anita img, .shadow img, .newgirl img{
+  float:left;
+  margin-right:10px;
+}
+.anita p, .shadow p{
+  margin-bottom:100px;
+}
+.two{
+  margin-bottom:50px;
+}
+#ourWork{
+  margin-left:5%;
+}
+.image{
+  margin:0;
+  padding:0;
+  position:relative;
+  display:inline-block;
+  border:4px solid #f5f5f5;
+}
+.image:after, .image:before{
+  position:absolute;
+  opacity:0;
+  transition:all .5s ease;
+  -webkit-transition:all .5s ease;
+}
+.image:after{
+  content:'\A';
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.6);
+}
+.image:before{
+  content:attr(data-content);
+  color:#f5f5f5;
+  z-index:1;
+  text-align:center;
+  background:gray;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+.image:hover:after, .image:hover:before{
+  opacity:1;
+}
+.work{
+  opacity:1;
+}
+.work:hover{
+  opacity:.3;
+  cursor:pointer;
+}
+.datepicker{
+  
+}
+#map{
+  height:200px;
+  width:50%;
+  float:right;
+  margin-top:-175px;
+  margin-right:150px;
+}
+.map{
+  width:50%;
+}
+#connect ul{
+  list-style-type:none;
+}
+#footer{
+  margin-top:100px;
+  text-align:center;
+  color:#c00000;
+}
+b{
+  font-family:limelight;
+  color:#f5f5f5;
+  font-size:1.3em;
+}
+#footer ul{
+  list-style-type:none;
+}
+#footer li{
+  display:inline;
+}
+#footer i{
+  font-size:2em;
 }
