@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     $('#Date').hide();
     $('#showDate').text('Please Select a Date.');
+    $('.send').prop('disabled', true);
     $('.datepicker').datepicker({
       prevText:'<i class="fa fa-fw fa-angle-left"></i>',
       nextText:'<i class="fa fa-fw fa-angle-right"></i>'
@@ -39,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function(){
     $('.datepicker').on('change', function(e){
       e.preventDefault();
       var date = $(this).val();
+      $('.send').prop('disabled', false);
       $('#showDate').text('Date: '+date);
       $('#Date').val(date);
       $('#Date').hide();

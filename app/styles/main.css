@@ -210,6 +210,9 @@ tr{
   margin-right:155px;
   font-size:1.5em;
 }
+#thankyou_message b{
+  color:#c00000;
+}
 form{
   float:right;
   margin-top:-380px;
