@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
   /*
-  ~ Disable send button untill date is selected
   ~ Mobile style
+  ~ Change subject on emails
   */
   $(document).ready(function(){
     var sections = $('section');
