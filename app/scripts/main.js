@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', function(){
-  /*
-  ~ Mobile style
-  ~ Change subject on emails
-  */
   $(document).ready(function(){
     var sections = $('section');
     var nav = $('nav');
@@ -29,7 +25,10 @@ document.addEventListener('DOMContentLoaded', function(){
       }, 500);
       return false;
     });
-
+    $('.container').on('click', function(e){
+      $('.navList').toggle();
+    });// End `Container`
+    $('.navList').hide();
     $('#Date').hide();
     $('#showDate').text('Please Select a Date.');
     $('.send').prop('disabled', true);
