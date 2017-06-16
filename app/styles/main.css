@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @font-face{
-  src:url('../fonts/Limelight-Regular.tff');
+  src:url('../fonts/Limelight-Regular.ttf');
   font-family:limelight;
 }
 body{
@@ -144,7 +144,115 @@ h4{
   cursor:pointer;
 }
 .datepicker{
-  
+  width:475px;
+  border-radius:10px;
+  box-shadow:0 19px 38px rgba(0,0,0,0.2), 0 15px 12px rgba(0,0,0,0.2);
+  overflow:hidden;
+}
+.datepicker .ui-datepicker-inline{
+  padding:30px;
+}
+.datepicker .ui-datepicker-header{
+  text-align:center;
+  font-size:1.5em;
+  padding-bottom:.5em;
+  letter-spacing:.1em;
+  color:#f5f5f5;
+}
+.datepicker .ui-datepicker-header .ui-datepicker-prev,
+.datepicker .ui-datepicker-header .ui-datepicker-next{
+  float:left;
+  cursor:pointer;
+  font-size:1.4em;
+  padding:0 5px;
+  margin-top:-7px;
+  color:#c00000;
+  transition:.6s;
+}
+.datepicker .ui-datepicker-header .ui-datepicker-next{
+  float:right;
+}
+.datepicker .ui-datepicker-calendar{
+  width:100%;
+  font-size:1.5em;
+  align:center;
+}
+.datepicker .ui-datepicker-calendar a{
+  color:#f5f5f5;
+  text-decoration:none;
+  display:block;
+  margin:0 auto;
+  width:30px;
+  height:30px;
+  line-height:30px;
+  border-radius:50%;
+  border:1px solid transparent;
+  cursor:pointer;
+}
+.datepicker .ui-datepicker-calendar a:hover{
+  color:#c00000;
+  transition:.7s;
+  transform:scale(1);
+}
+.ui-datepicker-today{
+  text-decoration:underline;
+}
+tr{
+  color:#c00000;
+}
+#book{
+  margin-bottom:200px;
+  margin-top:100px;
+}
+#thankyou_message{
+  float:right;
+  margin-top:-200px;
+  margin-right:155px;
+  font-size:1.5em;
+}
+form{
+  float:right;
+  margin-top:-380px;
+  width:50%;
+  padding:50px;
+  background:#222;
+  text-align:center;
+}
+input, select{
+  display:inline-block;
+  width:100%;
+  margin:20px 0;
+  border:2px dashed #222;
+  outline:none;
+  font-size:20px;
+  transition:all .2s ease;
+  color:#222;
+  background-color:#f5f5f5;
+}
+button{
+  width:100%;
+  display:inline-block;
+  margin:20px 0;
+  outline:none;
+  font-size:20px;
+  color:#c00000;
+  background-color:#222;
+}
+input:focus, select:focus{
+  border-color:#c00000;
+}
+::-webkit-input-placeholder{
+  color:#222;
+}
+:-ms-input-placeholder{
+  color:#222;
+}
+::-moz-placeholder{
+  color:#222;
+  opacity:1;
+}
+.date{
+  font-size:20px;
 }
 #map{
   height:200px;
