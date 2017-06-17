@@ -79,7 +79,7 @@ function validEmail(email) { // see:
 }
 // get all data in form and return object
 function getFormData() {
-  var elements = document.getElementById("BookNow").elements; // all form elements
+  var elements = document.getElementById('BookNow').elements; // all form elements
   var fields = Object.keys(elements).map(function(k) {
     if(elements[k].name !== undefined) {
       return elements[k].name;
@@ -93,10 +93,10 @@ function getFormData() {
   var data = {};
   fields.forEach(function(k){
     data[k] = elements[k].value;
-    var str = ""; // declare empty string outside of loop to allow
+    var str = ''; // declare empty string outside of loop to allow
                   // it to be appended to for each item in the loop
-    if(elements[k].type === "checkbox"){ // special case for Edge's html collection
-      str = str + elements[k].checked + ", "; // take the string and append
+    if(elements[k].type === 'checkbox'){ // special case for Edge's html collection
+      str = str + elements[k].checked + ', '; // take the string and append
                                               // the current checked value to
                                               // the end of it, along with
                                               // a comma and a space
@@ -106,7 +106,7 @@ function getFormData() {
     }else if(elements[k].length){
       for(var i = 0; i < elements[k].length; i++){
         if(elements[k].item(i).checked){
-          str = str + elements[k].item(i).value + ", "; // same as above
+          str = str + elements[k].item(i).value + ', '; // same as above
           data[k] = str.slice(0, -2);
         }
       }
@@ -143,6 +143,6 @@ function loaded() {
   console.log('Ready To Send!');
   // bind to the submit event of our form
   var form = document.getElementById('BookNow');
-  form.addEventListener("submit", handleFormSubmit, false);
+  form.addEventListener('submit', handleFormSubmit, false);
 };
 document.addEventListener('DOMContentLoaded', loaded, false);
