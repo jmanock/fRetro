@@ -207,7 +207,7 @@ tr{
 #thankyou_message{
   float:right;
   margin-top:-200px;
-  margin-right:155px;
+  margin-right:5%;
   font-size:1.5em;
 }
 #thankyou_message b{
@@ -267,8 +267,11 @@ input:focus, select:focus{
 .map{
   width:50%;
 }
-#connect ul{
+#location ul{
   list-style-type:none;
+}
+address a{
+  color:#f5f5f5;
 }
 #footer{
   margin-top:100px;
@@ -289,58 +292,105 @@ b{
 #footer i{
   font-size:2em;
 }
+.mobile{
+  display:none;
+}
 
-@media only screen and (max-width:1030px){
+@media(max-width:1030px){
   .navbar-text{
     display:none;
   }
+  #thankyou_message{
+    font-size:1.3em;
+  }
 }
 
-@media (max-width:871px){
-  .navbar.navbar-default{
-    padding:10px 0;
-    border:none;
-    z-index:-1;
-    /*display:none;*/
+@media(max-width:940px){
+  #thankyou_message{
+    font-size:1.1em;
   }
-  .navbar-header{
-    float:none;
+}
+
+@media (max-width:875px){
+  .navbar{
+    display:none;
   }
-  .navbar-collapse.collapse{
-    display:none !important;
+  .mobile{
+    display:block;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#222;
   }
-  .navbar-brand{
-    /*display:none;*/
-    margin-left:25%;
+  .logo{
+    font-size:2.5em;
+    margin-left:35%;
+    font-family:limelight;
   }
   .container{
     display:inline-block;
     cursor:pointer;
     position:fixed;
-    top:2.5em;
-    z-index:10 !important;
+    top:1em;
+  }
+  .navList a{
+
   }
   .bar1, .bar2, .bar3{
     width:35px;
     height:5px;
     background-color:#f5f5f5;
     margin:6px 0;
-    transition:0.4s;
+    transition:.4s;
   }
-  .navList{
-    position:fixed;
-    background-color:#f5f5f5;
-    list-style-type:none;
-    width:15%;
-    margin-top:-20px;
-    border-radius:10px;
-    font-family:quicksand;
+  h2{
+    text-align:center;
+    margin-bottom:30px;
+  }
+  .datepicker{
+    margin-left:10%;
   }
   form{
     float:none;
     margin-top:20px;
-    margin-left:-20px;
-    width:100%;
+    margin-left:7%;
+    width:75%;
+  }
+  #thankyou_message{
+    float:none;
+    margin-top:5%;
+    margin-left:10%;
+  }
+  #book{
+    margin-bottom:0;
+  }
+  .image{
+    z-index:-1;
+    position:relative;
+    display:block;
+    margin:0;
+    padding:10px;
+    text-align:center;
+    border:0;
+  }
+  .image:after, .image:before{
+    position:absolute;
+    opacity:1;
+  }
+  .image:after{
+    content:'\A';
+    top:0;
+    left:0;
+  }
+  .image:before{
+    content:attr(data-content);
+    color:#f5f5f5;
+    z-index:1;
+    text-align:center;
+    background:#222;
+  }
+  #map{
+    z-index:-1;
   }
 }
 @media (max-width:680px){
@@ -355,6 +405,18 @@ b{
   }
   h2{
     text-align:center;
-    
+  }
+}
+@media(max-width:560px){
+  .logo{
+    font-size:2em;
+  }
+  .datepicker{
+    width:75%;
+  }
+}
+@media(max-width:430px){
+  .logo{
+    font-size:1.5em;
   }
 }

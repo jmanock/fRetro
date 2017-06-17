@@ -25,9 +25,14 @@ document.addEventListener('DOMContentLoaded', function(){
       }, 500);
       return false;
     });
-    $('.container').on('click', function(e){
+    $('.container').on('click', function(){
       $('.navList').toggle();
     });// End `Container`
+
+    $('.navList a').on('click', function(e){
+      e.preventDefault();
+    });
+
     $('.navList').hide();
     $('#Date').hide();
     $('#showDate').text('Please Select a Date.');
