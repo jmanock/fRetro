@@ -333,9 +333,6 @@ b{
     position:fixed;
     top:1em;
   }
-  .navList a{
-
-  }
   .bar1, .bar2, .bar3{
     width:35px;
     height:5px;
@@ -416,6 +413,9 @@ b{
   }
 }
 @media(max-width:430px){
+  body{
+    font-size:1.2em;
+  }
   .logo{
     font-size:1.5em;
   }

@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
       });// End `Sections`
     });// End `Scroll`
+
     nav.find('a').on('click', function(){
       var $el = $(this);
       var id = $el.attr('href');
@@ -24,13 +25,20 @@ document.addEventListener('DOMContentLoaded', function(){
         scrollTop:$(id).offset().top - nav_height
       }, 500);
       return false;
-    });
+    });// End `nav Click`
+
     $('.container').on('click', function(){
       $('.navList').toggle();
     });// End `Container`
 
     $('.navList a').on('click', function(e){
       e.preventDefault();
+      var $el = $(this);
+      var id = $el.attr('href');
+      $('html, body').animate({
+        scrollTop:$(id).offset().top - nav_height
+      },500);
+      return false;
     });
 
     $('.navList').hide();
