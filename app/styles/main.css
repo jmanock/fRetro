@@ -84,12 +84,20 @@ h4{
 #team ul{
   list-style-type:none;
 }
-.brit img, .amanda img, .jeanne img, .patti img{
+.patti{
+  margin-bottom:100px;
+}
+.pattiPic{
+  width:20%;
+  height:20%;
+  float:right;
+}
+.brit img, .amanda img, .jeanne img{
   float:right;
   margin-left:10px;
   margin-right:20px;
 }
-.amanda p, .jeanne p, .patti p{
+.amanda p, .jeanne p{
   margin-bottom:100px;
 }
 .maggie img, .anita img, .shadow img, .newgirl img{
