@@ -70,7 +70,35 @@ h4{
   margin-left:10%;
 }
 #history{
-  margin-bottom:50px;
+  /*margin-bottom:50px;*/
+}
+#team{
+  margin-left:-10px;
+}
+#team > p{
+  font-size:4em;
+}
+#team > ul{
+  list-style:none;
+}
+.brit > img{
+  border-radius:20px;
+  float:right;
+}
+.maggie > img{
+  border-radius:20px;
+  float:left;
+  width:25%;
+  height:25%;
+}
+.patti{
+  margin-bottom:100px;
+}
+.pattiPic{
+  width:25%;
+  height:25%;
+  float:right;
+  margin-top:-50px;
 }
 /*#team{
   margin-bottom:100px;
@@ -84,15 +112,7 @@ h4{
 #team ul{
   list-style-type:none;
 }
-.patti{
-  margin-bottom:100px;
-}
-.pattiPic{
-  width:15%;
-  height:15%;
-  float:right;
-  margin-top:-50px;
-}
+
 .brit img, .amanda img, .jeanne img{
   float:right;
   margin-left:10px;
@@ -110,7 +130,7 @@ h4{
 }
 .two{
   margin-bottom:50px;
-}*/ 
+}*/
 #ourWork{
   margin-left:5%;
 }
