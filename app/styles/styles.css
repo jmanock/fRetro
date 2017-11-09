@@ -27,6 +27,9 @@ p{
 a{
   font-size:1.8em;
 }
+a.active{
+  border-bottom:2px solid #f5f5f5;
+}
 .fa-phone-square{
   color:#c00000;
 }
@@ -68,27 +71,110 @@ a{
 #about{
   margin-top:50px;
   margin-right:50px;
-  padding-bottom:50px;
+  margin-bottom:50px;
 }
 #about img{
-  height:35%;
-  width:35%;
+  height:30%;
+  width:30%;
   border-radius:20px;
+  float:right;
+  margin-right:30px;
 }
 .offer{
-  float:right;
   padding-top:100px;
-  padding-right:100px;
 }
 .offer > ul > li{
   font-size:1.5em;
 }
-#team a{
-  font-size:1.8em;
+#team{
+  clear:right;
 }
-
 #brit img{
   width:30%;
   height:30%;
-
+  float:left;
+  border-radius:20px;
+  margin-right:20px;
+}
+.about{
+  padding-top:50px;
+  padding-right:20px;
+}
+#maggie{
+  clear:left;
+  padding-top:30px;
+}
+#maggie img{
+  float:right;
+  border-radius:20px;
+  margin-right:20px;
+}
+#maggie p{
+  padding-top:50px;
+}
+#patti{
+  clear:right;
+  padding-top:30px;
+}
+#patti img{
+  float:left;
+  margin-right:20px;
+}
+#patti p{
+  padding-top:100px;
+}
+#ourWork{
+  clear:both;
+}
+#ourWork > div{
+  display:inline;
+}
+#ourWork img{
+  height:30%;
+  width:30%;
+}
+.rotate{
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  transform:rotate(90deg);
+  padding-top:100px;
+}
+#location{
+  padding-top:20%;
+}
+#location b{
+  font-family:limelight;
+  font-size:2em;
+}
+address{
+  font-size:1.5em;
+}
+.names{
+  font-size:1.5em;
+}
+#location a{
+  font-size:1.7em;
+}
+#map{
+  height:200px;
+  float:right;
+  width:50%;
+  border:1px solid orange;
+  margin-right:100px;
+  margin-top:-200px;
+}
+#footer{
+  clear:right;
+  text-align:center;
+  font-size:1.5em;
+  padding-top:100px;
+}
+#footer b{
+  font-family:limelight;
+  font-size:1.5em;
+}
+#footer i{
+  color:#c00000;
 }
