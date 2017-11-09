@@ -5,11 +5,30 @@
 }
 body{
   height:100%;
-  margin-left:20px;
   background-color:#222;
   color:#f5f5f5;
   font-family:Quicksand;
   font-size:1.5;
+  margin-left:5%;
+}
+h2{
+  text-align:center;
+  font-size:2.3em;
+  color:#c00000;
+}
+h4{
+  font-size:2em;
+  font-family:limelight;
+  color:#f5f5f5;
+}
+p{
+  font-size:1.5em;
+}
+a{
+  font-size:1.8em;
+}
+.fa-phone-square{
+  color:#c00000;
 }
 .navList{
   display:none;
@@ -25,15 +44,10 @@ body{
   font-size:1.2em;
 }
 .tel{
-  color:#f5f5f5;
   font-size:1.3em;
 }
 .tel:hover{
   text-decoration:underline;
-  color:#f5f5f5;
-}
-.fa-phone-square{
-  color:#c00000;
 }
 .navbar-brand{
   color:#f5f5f5 !important;
@@ -51,8 +65,30 @@ body{
   margin-right:2%;
   margin-top:25px;
 }
-h2{
-  text-align:center;
-  font-size:2.3em;
-  color:#c00000;
+#about{
+  margin-top:50px;
+  margin-right:50px;
+  padding-bottom:50px;
+}
+#about img{
+  height:35%;
+  width:35%;
+  border-radius:20px;
+}
+.offer{
+  float:right;
+  padding-top:100px;
+  padding-right:100px;
+}
+.offer > ul > li{
+  font-size:1.5em;
+}
+#team a{
+  font-size:1.8em;
+}
+
+#brit img{
+  width:30%;
+  height:30%;
+
 }
