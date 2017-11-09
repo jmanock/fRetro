@@ -108,6 +108,8 @@ a.active{
   float:right;
   border-radius:20px;
   margin-right:20px;
+  width:30%;
+  height:30%;
 }
 #maggie p{
   padding-top:50px;
@@ -119,6 +121,8 @@ a.active{
 #patti img{
   float:left;
   margin-right:20px;
+  width:20%;
+  height:20%;
 }
 #patti p{
   padding-top:100px;
@@ -132,6 +136,7 @@ a.active{
 #ourWork img{
   height:30%;
   width:30%;
+  z-index:-2 !important;
 }
 .rotate{
   -webkit-transform:rotate(90deg);
@@ -140,6 +145,7 @@ a.active{
   -o-transform:rotate(90deg);
   transform:rotate(90deg);
   padding-top:100px;
+  z-index:-2 !important;
 }
 #location{
   padding-top:20%;
@@ -164,6 +170,7 @@ address{
   border:1px solid orange;
   margin-right:100px;
   margin-top:-200px;
+  z-index:-1;
 }
 #footer{
   clear:right;
@@ -177,4 +184,122 @@ address{
 }
 #footer i{
   color:#c00000;
+}
+@media(max-width:400px){
+  .navbar{
+    display:none;
+  }
+  .mobile{
+    display:block;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#222;
+  }
+  .navList{
+    list-style-type:none;
+    font-size:1em;
+  }
+  .navList a{
+    color:#c00000;
+  }
+  .navList a:hover{
+    text-decoration:underline;
+    color:#c00000;
+  }
+  .logo{
+    font-size:2em;
+    margin-left:20%;
+    font-family:limelight;
+  }
+  .container{
+    display:inline-block;
+    cursor:pointer;
+    position:fixed;
+    top:1em;
+  }
+  .bar1, .bar2, .bar3{
+    width:35px;
+    height:5px;
+    background-color:#f5f5f5;
+    margin:6px 0;
+    transition:.4s;
+  }
+  #map{
+    float:none;
+  }
+}
+@media(max-width:1048px){
+  .navbar-text{
+    font-size:.7em;
+  }
+}
+@media(max-width:995px){
+  .navbar-text{
+    display:none;
+  }
+}
+@media(max-width:900px){
+  #map{
+    width:40%;
+  }
+}
+@media(max-width:750px){
+  #map{
+    float:none;
+    margin-top:0;
+  }
+}
+@media(max-width:837px){
+  .navbar-text{
+    display:none;
+  }
+  .navbar{
+    display:none;
+  }
+  .mobile{
+    display:block;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#222;
+    z-index:1;
+  }
+  .navList{
+    list-style-type:none;
+    font-size:1em;
+  }
+  .navList a{
+    color:#c00000;
+  }
+  .navList a:hover{
+    text-decoration:underline;
+    color:#c00000;
+  }
+  .logo{
+    font-size:2em;
+    margin-left:20%;
+    font-family:limelight;
+  }
+  .container{
+    display:inline-block;
+    cursor:pointer;
+    position:fixed;
+    top:1em;
+  }
+  .bar1, .bar2, .bar3{
+    width:35px;
+    height:5px;
+    background-color:#f5f5f5;
+    margin:6px 0;
+    transition:.4s;
+  }
+  #about{
+    margin-top:10%;
+  }
+  #map{
+    width:40%;
+
+
+  }
 }
