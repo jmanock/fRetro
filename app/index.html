@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="">
   <head>
@@ -7,228 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Salon Retro</title>
 
+    <link rel='shortcut icon' href='scissors.ico'>
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" href="scissors.ico">
+
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <nav class='navbar navbar-default navbar-fixed-top'>
-      <div class="navbar-header">
-        <span class='logo navbar-brand'>Salon <span class='bg'>
-          <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDMxLjk0NSAzMS45NDQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMxLjk0NSAzMS45NDQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjMwLjEwMyw4LjgzNiAzMC43MTIsOC4yNDEgMTkuMTY2LDExLjk3OCAxOC4yNzEsMTQuNjQyICAgIiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTE0Ljk1MiwxMi45NzdsLTcuMzYyLDAuMjcyYy0wLjA2OC0wLjA5MS0wLjE0MS0wLjE3OS0wLjIyLTAuMjYxYy0xLjAyOC0xLjA2OS0yLjgyOC0xLjIxNC00LjI3OS0wLjM0NyAgICBjLTAuODA2LDAuNDgxLTEuNDA0LDEuMjA2LTEuNjg2LDIuMDQxYy0wLjI5MSwwLjg2MS0wLjIxMSwxLjczNiwwLjIyNCwyLjQ2MmMwLjEwNywwLjE4MSwwLjIzNSwwLjM0OCwwLjM4LDAuNDk4bDAsMCAgICBjMC43ODcsMC44MTcsMi4wMjUsMS4wOTQsMy4yMTMsMC43ODljMC4wMzQsMC4wNjUsMC4wNzUsMC4xMjksMC4xMjksMC4xODVjMC4zMDQsMC4zMTUsMC44MDYsMC4zMjUsMS4xMjIsMC4wMjIgICAgYzAuMjQ3LTAuMjM4LDAuMzA0LTAuNTk3LDAuMTczLTAuODkzYzAuNjI1LTAuNDY5LDEuMDktMS4wOTQsMS4zMjgtMS43OTljMC4xNjMtMC40OCwwLjIwNS0wLjk2NCwwLjEzOS0xLjQyNWw1Ljk0MiwwLjE4OSAgICBMMTQuOTUyLDEyLjk3N3ogTTcuMDcyLDE1LjY0NWMtMC4yMDksMC42MjEtMC42NjEsMS4xNjQtMS4yNzMsMS41MjljLTEuMDc1LDAuNjQzLTIuMzgxLDAuNTYyLTMuMTA2LTAuMTg5ICAgIGMtMC4wOTUtMC4xLTAuMTc5LTAuMjA5LTAuMjQ5LTAuMzI1Yy0wLjI5LTAuNDg0LTAuMzM5LTEuMDc4LTAuMTM5LTEuNjcxYzAuMjA5LTAuNjIxLDAuNjYxLTEuMTY0LDEuMjcyLTEuNTMgICAgYzEuMDc1LTAuNjQzLDIuMzgyLTAuNTYzLDMuMTA2LDAuMTljMC4wOTUsMC4wOTksMC4xNzksMC4yMDksMC4yNDksMC4zMjZDNy4yMjQsMTQuNDU4LDcuMjcyLDE1LjA1Miw3LjA3MiwxNS42NDV6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTE2LjQzMSwzMS44MjVjMC4wNS0wLjIwNS0wLjc5My0yLjQ5NywwLjAyMy0zLjM3OGMwLjM0Ni0wLjI3LDAuNjUyLTAuNjAyLDAuOS0wLjk4M2MwLjkyMi0xLjQxOCwwLjg0Ni0zLjIyMi0wLjE4Mi00LjI5ICAgIGMtMC4wMjgtMC4wMjktMC4wNi0wLjA1NC0wLjA4OS0wLjA4M2wwLjUwMi04LjM0NkwyMi41MzQsMGwtMC43NiwwLjk3N2wtNywxMy41NDZsMS4xNjgsMS4yNjlsLTAuNDQ0LDYuNTUzICAgIGMtMC40MDctMC4wNDgtMC44MzMtMC4wMTItMS4yNiwwLjExM2MtMC44NDUsMC4yNS0xLjU5MiwwLjgxOS0yLjEwNCwxLjYwNmMtMC45MjIsMS40MTgtMC44NDYsMy4yMjIsMC4xODIsNC4yOTEgICAgYzAuMTQ1LDAuMTQ4LDAuMzA4LDAuMjgzLDAuNDgzLDAuMzk2YzAuMzk1LDAuMjU4LDAuODQsMC40MDIsMS4zMDcsMC40MzljMS4xNDksMC41MTQsMS4yMjMsMi4xMDYsMS4zNjEsMi40MzQgICAgQzE1LjYwNywzMS45NTYsMTYuMzc3LDMyLjA0MSwxNi40MzEsMzEuODI1eiBNMTYuMDE5LDE0LjU0MmMtMC4xOS0wLjE5OS0wLjE4NC0wLjUxNCwwLjAxNC0wLjcwNSAgICBjMC4xOTgtMC4xODksMC41MTMtMC4xODQsMC43MDQsMC4wMTVjMC4xOSwwLjE5NywwLjE4NCwwLjUxMy0wLjAxNCwwLjcwM0MxNi41MjQsMTQuNzQ2LDE2LjIwOSwxNC43NCwxNi4wMTksMTQuNTQyeiAgICAgTTE0Ljk4MiwyOC4xNTdjLTAuNjAxLDAuMTc4LTEuMTkyLDAuMTA0LTEuNjY1LTAuMjAyYy0wLjExNS0wLjA3NS0wLjIyMS0wLjE2Mi0wLjMxNi0wLjI2MmMtMC43MjUtMC43NTItMC43NTQtMi4wNjItMC4wNzEtMy4xMSAgICBjMC4zODgtMC41OTksMC45NDgtMS4wMjgsMS41NzctMS4yMTRjMC42MDEtMC4xNzgsMS4xOTEtMC4xMDUsMS42NjQsMC4yMDFjMC4xMTUsMC4wNzYsMC4yMjEsMC4xNjQsMC4zMTYsMC4yNjQgICAgYzAuNzI1LDAuNzUyLDAuNzUzLDIuMDYxLDAuMDcxLDMuMTExQzE2LjE2OSwyNy41NDEsMTUuNjA5LDI3Ljk3MywxNC45ODIsMjguMTU3eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-        </span>Retro</span>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class='nav navbar-nav navbar-left'>
-          <li><a href="#about">About</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#ourWork">Our Work</a></li>
-          <li><a href="#location">Location</a></li>
-        </ul>
-        <p class='navbar-text navbar-right'><i class='fa fa-phone-square'><a href="tel:4079518658" class='tel'> 407.951.8658</a></i></p>
-      </div>
-    </nav>
-    <div class="mobile">
-      <div class="container">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
 
-        <span class='logo'>Salon <span class='bg'>
-          <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDMxLjk0NSAzMS45NDQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMxLjk0NSAzMS45NDQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjMwLjEwMyw4LjgzNiAzMC43MTIsOC4yNDEgMTkuMTY2LDExLjk3OCAxOC4yNzEsMTQuNjQyICAgIiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTE0Ljk1MiwxMi45NzdsLTcuMzYyLDAuMjcyYy0wLjA2OC0wLjA5MS0wLjE0MS0wLjE3OS0wLjIyLTAuMjYxYy0xLjAyOC0xLjA2OS0yLjgyOC0xLjIxNC00LjI3OS0wLjM0NyAgICBjLTAuODA2LDAuNDgxLTEuNDA0LDEuMjA2LTEuNjg2LDIuMDQxYy0wLjI5MSwwLjg2MS0wLjIxMSwxLjczNiwwLjIyNCwyLjQ2MmMwLjEwNywwLjE4MSwwLjIzNSwwLjM0OCwwLjM4LDAuNDk4bDAsMCAgICBjMC43ODcsMC44MTcsMi4wMjUsMS4wOTQsMy4yMTMsMC43ODljMC4wMzQsMC4wNjUsMC4wNzUsMC4xMjksMC4xMjksMC4xODVjMC4zMDQsMC4zMTUsMC44MDYsMC4zMjUsMS4xMjIsMC4wMjIgICAgYzAuMjQ3LTAuMjM4LDAuMzA0LTAuNTk3LDAuMTczLTAuODkzYzAuNjI1LTAuNDY5LDEuMDktMS4wOTQsMS4zMjgtMS43OTljMC4xNjMtMC40OCwwLjIwNS0wLjk2NCwwLjEzOS0xLjQyNWw1Ljk0MiwwLjE4OSAgICBMMTQuOTUyLDEyLjk3N3ogTTcuMDcyLDE1LjY0NWMtMC4yMDksMC42MjEtMC42NjEsMS4xNjQtMS4yNzMsMS41MjljLTEuMDc1LDAuNjQzLTIuMzgxLDAuNTYyLTMuMTA2LTAuMTg5ICAgIGMtMC4wOTUtMC4xLTAuMTc5LTAuMjA5LTAuMjQ5LTAuMzI1Yy0wLjI5LTAuNDg0LTAuMzM5LTEuMDc4LTAuMTM5LTEuNjcxYzAuMjA5LTAuNjIxLDAuNjYxLTEuMTY0LDEuMjcyLTEuNTMgICAgYzEuMDc1LTAuNjQzLDIuMzgyLTAuNTYzLDMuMTA2LDAuMTljMC4wOTUsMC4wOTksMC4xNzksMC4yMDksMC4yNDksMC4zMjZDNy4yMjQsMTQuNDU4LDcuMjcyLDE1LjA1Miw3LjA3MiwxNS42NDV6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTE2LjQzMSwzMS44MjVjMC4wNS0wLjIwNS0wLjc5My0yLjQ5NywwLjAyMy0zLjM3OGMwLjM0Ni0wLjI3LDAuNjUyLTAuNjAyLDAuOS0wLjk4M2MwLjkyMi0xLjQxOCwwLjg0Ni0zLjIyMi0wLjE4Mi00LjI5ICAgIGMtMC4wMjgtMC4wMjktMC4wNi0wLjA1NC0wLjA4OS0wLjA4M2wwLjUwMi04LjM0NkwyMi41MzQsMGwtMC43NiwwLjk3N2wtNywxMy41NDZsMS4xNjgsMS4yNjlsLTAuNDQ0LDYuNTUzICAgIGMtMC40MDctMC4wNDgtMC44MzMtMC4wMTItMS4yNiwwLjExM2MtMC44NDUsMC4yNS0xLjU5MiwwLjgxOS0yLjEwNCwxLjYwNmMtMC45MjIsMS40MTgtMC44NDYsMy4yMjIsMC4xODIsNC4yOTEgICAgYzAuMTQ1LDAuMTQ4LDAuMzA4LDAuMjgzLDAuNDgzLDAuMzk2YzAuMzk1LDAuMjU4LDAuODQsMC40MDIsMS4zMDcsMC40MzljMS4xNDksMC41MTQsMS4yMjMsMi4xMDYsMS4zNjEsMi40MzQgICAgQzE1LjYwNywzMS45NTYsMTYuMzc3LDMyLjA0MSwxNi40MzEsMzEuODI1eiBNMTYuMDE5LDE0LjU0MmMtMC4xOS0wLjE5OS0wLjE4NC0wLjUxNCwwLjAxNC0wLjcwNSAgICBjMC4xOTgtMC4xODksMC41MTMtMC4xODQsMC43MDQsMC4wMTVjMC4xOSwwLjE5NywwLjE4NCwwLjUxMy0wLjAxNCwwLjcwM0MxNi41MjQsMTQuNzQ2LDE2LjIwOSwxNC43NCwxNi4wMTksMTQuNTQyeiAgICAgTTE0Ljk4MiwyOC4xNTdjLTAuNjAxLDAuMTc4LTEuMTkyLDAuMTA0LTEuNjY1LTAuMjAyYy0wLjExNS0wLjA3NS0wLjIyMS0wLjE2Mi0wLjMxNi0wLjI2MmMtMC43MjUtMC43NTItMC43NTQtMi4wNjItMC4wNzEtMy4xMSAgICBjMC4zODgtMC41OTksMC45NDgtMS4wMjgsMS41NzctMS4yMTRjMC42MDEtMC4xNzgsMS4xOTEtMC4xMDUsMS42NjQsMC4yMDFjMC4xMTUsMC4wNzYsMC4yMjEsMC4xNjQsMC4zMTYsMC4yNjQgICAgYzAuNzI1LDAuNzUyLDAuNzUzLDIuMDYxLDAuMDcxLDMuMTExQzE2LjE2OSwyNy41NDEsMTUuNjA5LDI3Ljk3MywxNC45ODIsMjguMTU3eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-        </span>Retro</span>
-
-      <ul class='navList'>
-        <li><a href="#about">About</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#ourWork">Our Work</a></li>
-        <li><a href="#location">Location</a></li>
-      </ul>
+    <div class='grid-container'>
+      <header>Header</header>
+      <section id='logo'>Logo</section>
+      <section id='about'>About</section>
+      <article class="brit">
+          <h3>Brittani Manock</h3>
+          <p>
+            Brittani has been involved and worked in the beauty & entertainment industries for over 20 years. She started doing make-up in thearter in middle school which ignitted her path to a career as a professional make-up artist. She attended JOE BLASCO SCHOOL for Make-Up Artistry in Orlando in 2005.
+          </p>
+          <p>
+            In 2013, She began training at HOLLYWOOD INSTUTE of BEAUTY CARRES for a license in Skin Care. After completing the Skin Care Program she extended her education by also earning a total of 3 Licenses which include COSMETOLOGY, SKIN CARE, & NAIL SPECIALIST.
+          </p>
+          <p>
+            Brittani has been working as a professional stylist at SALON RETRO since 2015 and has since become the owner with Maggie Byrnes.
+          </p>
+      </article>
+      <span class='' id='britImage'>
+        <img src='images/brit.JPG' alt='' id='britImg'>
+      </span>
+      <article class='maggie'>
+        <h3>Maggie Byrnes</h3>
+        <p>
+          Maggie's unique background living around the world has provided her a cultured and outpouring creative spirit. With formal fine arts education combined with cosmetology training from PAUL MITCHELL the school Orlando, she enjoys transforming a canvas and showing her clients the limitles possibilities of hair. Whether you need a complex UP-DO with BRAIDS and CURLS or a SLEEK, CLASSICE CUT and COLOR with a POLISHED FINISH, Maggie can't wait to help you make your style just that, completely yours!
+        </p>
+      </article>
+      <span id='maggieImage'>
+        <img src='images/magieHead.jpg' alt='' id='maggieImg'>
+      </span>
+      <article class='patti'>
+        <h3>Patti Migliorato Rieder</h3>
+        <p>
+          Patti has been a stylist in FLorida since 1976. A winner of over 250 AWARDS in STATE, NATIONAL, and INTERNATIONAL compatitions in HAIR STYLEING, CUTTING, and COLORING. A winner of #1 COLORIST in the USA in 1990 at HAIR COLOR USA in Miami, Fl.
+        </p>
+      </article>
+      <span id='pattiImage'>
+        <img src='images/patti.png' alt='' id='pattiImg'>
+      </span>
+      <section id='works'>Our Work</section>
+      <section id='location'>Location</section>
+      <section id='contact'>Contact</section>
+      <footer>Footer</footer>
     </div>
 
-    <section id='about'>
-      <h2>About</h2>
-      <h4>History</h4>
-      <p id='history'>Salon Retro grand opening was January 7th, 2014 by Patti Migliorato Rieder who has been a stylist in Florida since 1976. She has sold Salon Retro June 2017 to Brittani Fernandez and Maggie Byrnes but is continuing to work at Salon Retro as a mentor and trainer for the new owners.</p>
-      <img src='images/mb.JPG' id='mb'>
-      <div class="offer">
-        <h4>Our Salon Offers</h4>
-        <ul>
-          <li>Free Wi-Fi</li>
-          <li>Text and/or Phone Call Conformations</li>
-          <li>Complimentary Wine, Soft Drinks, Coffee, &amp; Water</li>
-          <li>Friendly staff that will answer any questions</li>
-        </ul>
-      </div>
-    </section>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
 
-    <section id='team'>
-      <h2>Our Team</h2>
-      <div id='brit'>
-        <h4>Brittani Fernandez</h4>
-        <a href="tel:3213563557"><i class='fa fa-phone-square'></i> 321.356.3557</a><br>
-        <img src="images/brit.jpeg" alt="">
-        <div class="about">
-          <p>
-            Brittani has been involved and worked in the beauty and entertainment industries for over 20 years. She started doing make-up in theater in middle school which ignitted her path to a career as a professional make-up artist. She attended Joe Blasco School For Make-Up Artistry in Orlando in 2005.
-          </p>
-          <p>
-            In 2013, She began training at Hollywood Instute of Beauty Carres for a license in Skin Care. After completing the Skin Care Program she extended her education by also earning a total of 3 Licenses which include Cosmetology, Skin Care, and Nail Specialist
-          </p>
-          <p>
-            Brittani has been working as a professional stylist at Salon Retro since 2015 and has since become the Salon owner with partner Maggie Byrnes
-          </p>
-        </div>
-      </div>
-      <div id='maggie'>
-        <h4>Maggie Byrnes</h4>
-        <a href="tel:8508906922"><i class='fa fa-phone-square'></i> 850.890.6922</a><br>
-        <img src="images/magieHead.jpg" alt="">
-        <p>
-          Maggie's unique background living around the world has provided her a cultured and outpouring creative spirit. With formal fine arts education combined with cosmetology training from Paul Mitchell the school Orlando, she enjoys transforming a canvas and showing her clients the limitless possibilities of hair. Whether you need a complex up-do with braids and curls or a sleek, classic cut and color with a polished finish, Maggie can't wait to help you make your style just that, completely yours!
-        </p>
-      </div>
-      <div id='patti'>
-        <h4>Patti Migliorato Rieder</h4>
-        <img src="images/patti.png" alt="">
-        <p>
-          Patti has been a stylist in Florida since 1976. A winner of over 250 awards in State, National and International compatitions in Hair Styling, Cutting, and Coloring. A winner of #1 Colorist in the USA in 1990 at Hair Color USA in Miami, Florida.
-        </p>
-      </div>
-    </section>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-    <section id='ourWork'>
-      <h2>Our Work</h2>
-      <div class="image">
-        <img src="images/1.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/2.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/3.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/4.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/5.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/6.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/7.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/8.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/12.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/13.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/14.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/15.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/one.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/five.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/six.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/two.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/three.jpg" alt="">
-      </div>
-      <div class="image">
-        <img src="images/IMG_5940.JPEG" alt="" class='rotate'>
-      </div>
-      <div class="image">
-        <img src="images/IMG_6125.JPEG" alt="" class='rotate'>
-      </div>
-      <div class="image">
-        <img src="images/IMG_6134.JPEG" alt="" class='rotate'>
-      </div>
-      <div class="image">
-        <img src="images/10.JPEG" alt="" class='rotate'>
-      </div>
-    </section>
-
-    <section id='location'>
-      <h2>Location</h2>
-      <address>
-        <b>Salon Retro</b> <br>
-        181 O'Brien RD <br>
-        Fern Park, FL 32730 <br>
-      </address>
-      <span class='names'>Salon Retro: </span><a href="tel:4079518658"><i class='fa fa-phone-square'></i> 407.951.8658</a>  <br>
-      <span class='names'>Brittani Fernandez: </span><a href="tel:3213563557"><i class='fa fa-phone-square'></i> 321.356.3557</a> <br>
-      <span class='names'>Maggie Byrnes: </span><a href="tel:8508906922"><i class='fa fa-phone-square'></i> 850.890.6922</a>
-      <div id='map'></div>
-    </section>
-
-    <section id='footer'>
-      <a href="https://www.facebook.com/MBSalonRetro/"><i class='fa fa-facebook'></i></a>
-      <a href="https://www.instagram.com/stylin_mags/"><i class='fa fa-instagram'></i></a>
-      <b>Salon</b> <b>Retro</b> &copy;2017
-    </section>
-
-    <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC3OCo6FqKVe-qeSXdiL6Sb9Y3Xv7GPJns&callback=initMap'></script>
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='https://www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X');ga('send','pageview');
-  </script>
-
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js'></script>
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.slim.js"
-  integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
-  crossorigin="anonymous"></script>
-
-  <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:js scripts/plugins.js -->
-
-  <!-- endbuild -->
-
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/scripts.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
 </html>

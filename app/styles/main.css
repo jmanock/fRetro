@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@font-face{
+  src:url('../fonts/Limelight-Regular.ttf');
+  font-family:limelight;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  margin:0;
+}
+.grid-container{
+  display:grid;
+  grid-template-areas:
+  'logo nav nav nav'
+  'about about about about'
+  'britImage brit brit brit'
+  'maggie maggie maggie maggieImage'
+  'pattiImage patti patti patti'
+  'works works works works'
+  'location location location location'
+  'contact contact contact contact'
+  'footer footer footer footer';
+  grid-template-rows:100px 100vh auto auto auto 100vh 200px;
+}
+header{
+  grid-area:nav;
+  background-color:teal;
+  font-family:limelight;
+}
+#logo{
+  grid-area:logo;
+  background-color:#fff;
+}
+#about{
+  grid-area:about;
+  background-color:pink;
+  font-family:'Quicksand';
+}
+.brit, .maggie, .patti{
+  background-color:#444;
+  font-family:'Quicksand';
+  color:#fff;
+}
+.brit{
+  grid-area:brit;
+}
+#britImage{
+  grid-area:britImage;
+  background-color:#444;
+}
+#britImg{
+  width:360px;
+  height:300px;
+  border-radius:20px;
+  padding-left:10px;
+  padding-right:10px;
+}
+.maggie{
+  grid-area:maggie;
+  background-color:#444;
+  padding-left:10px;
+  padding-right:10px;
+}
+#maggieImage{
+  grid-area:maggieImage;
+  background-color:#444;
+  padding-right:10px;
+}
+#maggieImg{
+  border-radius:20px;
+  background-color:#444;
+}
+.patti{
+  grid-area:patti;
+  margin-left:-70px;
+  z-index:1;
+}
+#pattiImage{
+  grid-area:pattiImage;
+  background-color:#444;
+  height:300px;
+}
+#pattiImg{
+  background-color:#444;
+  height:300px;
+  padding-left:10px;
+}
+#works{
+  grid-area:works;
+  background-color:lightblue;
+}
+#location{
+  grid-area:location;
+  background-color:purple;
+}
+#contact{
+  grid-area:contact;
+  background-color:yellow;
+}
+footer{
+  grid-area:footer;
+  background-color:brown;
+}
