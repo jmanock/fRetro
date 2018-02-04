@@ -72,7 +72,7 @@ header{
 }
 .patti{
   grid-area:patti;
-  margin-left:-70px;
+  margin-left:-40px;
   z-index:1;
 }
 #pattiImage{
