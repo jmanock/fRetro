@@ -30,13 +30,6 @@ module.exports = {
         ]
       },
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loaders: [
-          'ng-annotate-loader'
-        ]
-      },
-      {
         test: /\.html$/,
         loaders: [
           'html-loader'
@@ -51,6 +44,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: conf.path.src('index.html')
     }),
+    new webpack.ContextReplacementPlugin(
+      /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
+      conf.paths.src
+    ),
     new webpack.LoaderOptionsPlugin({
       options: {
         postcss: () => [autoprefixer]

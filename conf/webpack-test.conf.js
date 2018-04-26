@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const conf = require('./gulp.conf');
 module.exports = {
   module: {
     loaders: [
@@ -15,13 +16,6 @@ module.exports = {
         enforce: 'pre'
       },
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loaders: [
-          'ng-annotate-loader'
-        ]
-      },
-      {
         test: /\.html$/,
         loaders: [
           'html-loader'
@@ -30,6 +24,10 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.ContextReplacementPlugin(
+      /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
+      conf.paths.src
+    ),
     new webpack.LoaderOptionsPlugin({
       options: {},
       debug: true
