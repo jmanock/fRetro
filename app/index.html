@@ -256,11 +256,19 @@
       </section>
       <section>
         <h3>Location</h3>
-        <address>
-          181 O'Brien Rd <br>
-          Fern Park, FL 32730 <br>
-          <a href='tel:3213563557'>321.356.3557</a>
-        </address>
+        <div class='row'>
+          <div class='col-md-9'>
+            <div id='map' style='height:300px'></div>
+          </div>
+          <div class='col-md-3'>
+            <address>
+              Address: <br>
+              181 O'Brien Rd <br>
+              Fern Park, FL 32730
+              <a href='tel:3213563557'>321.356.3557</a>
+            </address>
+          </div>
+
       </section>
     </div>
     <footer>
@@ -289,7 +297,7 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC3OCo6FqKVe-qeSXdiL6Sb9Y3Xv7GPJns&callback=myMap'></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
