@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+body{
+  font-family:'Quicksand';
+  background-color:#616161;
+  color:#e0e0e0;
+}
+nav{
+  font-family:'Quicksand';
+}
+.navbar{
+  /* background-color:#aa1111 !important; */
+  /* background-color:#898e8c !important; */
+  /* background-color:#555 !important; */
+  background-color:#424242 !important;
+}
+.navbar-brand{
+  font-family:'Limelight';
+  color:#fff !important;
+  font-size:2em;
+}
+.navbar-nav{
+  font-size:1.2em;
+}
+.nav-link{
+  color:#bdbdbd !important;
+}
+.bkImage{
+  background-image:url('../images/11.jpg');
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  height:50vh;
+}
+section{
+
+}
+h3{
+  
+}
+footer{
+  text-align:center;
+  background-color:#424242;
+  color:#fff;
+}
+.logo{
+  border:3px solid #c00000;
+  border-radius:50%;
+  background-color:#c00000;
+}
