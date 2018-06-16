@@ -89,5 +89,9 @@
         "tmp": ".tmp"
       }
     }
+  },
+  "generator-mocha": {
+    "ui": "bdd",
+    "rjs": false
   }
 }
