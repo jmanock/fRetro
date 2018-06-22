@@ -1,4 +1,21 @@
 <form name='submit-to-google-sheet'>
+  <input name='firstName' type='text' placeholder='First Name'>
+  <input name='lastName' type='text' placeholder='Last Name'>
+  <input name='phoneNumber' type='number' placeholder='Phone Number'>
+  <input type='date' name='date'>
+  <select name='hour'>
+    <option value='' selected disabled>Please Choose...</option>
+    <option value='10am'>10am</option>
+    <option value='11am'>11am</option>
+    <option value='12pm'>12pm</option>
+  </select>
+  <select name='minute'>
+    <option value='' selected disabled>Please Choose...</option>
+    <option value='00'>00</option>
+    <option value='15'>15</option>
+    <option value='30'>30</option>
+    <option value='45'>45</option>
+  </select>
   <input name='email' type='email' placeholder='Email' required>
   <button type='submit'>Send</button>
 </form>
