@@ -41,16 +41,16 @@
       <div class='collapse navbar-collapse' id='navbarNav'>
         <ul class='navbar-nav'>
           <li class='nav-item active'>
-            <a class='nav-link' href='#'>About</a>
+            <a class='nav-link' href='#about'>About</a>
           </li>
           <li class='nav-item'>
-            <a class='nav-link' href='#'>Style</a>
+            <a class='nav-link' href='#book'>Book</a>
           </li>
           <li class='nav-item'>
-            <a class='nav-link' href='#'>Book</a>
+            <a class='nav-link' href='#style'>Style</a>
           </li>
           <li class='nav-item'>
-            <a class='nav-link' href='#'>Location</a>
+            <a class='nav-link' href='#location'>Location</a>
           </li>
         </ul>
       </div>
@@ -122,7 +122,55 @@
           </div>
         </div>
       </section>
-      <section>
+
+      <section id='book'>
+        <h3>Book</h3>
+
+        <form name='submit-to-google-sheet'>
+          <div class='col-md-9'>
+            <div class='form-group'>
+              <input class='form-control' name='name' type='text' placeholder='Name'>
+            </div>
+            <div class='form-group'>
+              <input type='email' name='email' class='form-control' placeholder='Email'>
+            </div>
+            <div class='form-group'>
+              <input type='number' name='phoneNumber' class='form-control' placeholder='Phone Number'>
+            </div>
+            <div class='form-group'>
+              <input type='date' name='date' class='form-control'>
+            </div>
+            <div class='form-group'>
+              <select name='time' class='form-control'>
+                <option value='' selected disabled>Please Choose a Time</option>
+                <option value='10:00am'>10:00 am</option>
+                <option value='10:30am'>10:30 am</option>
+                <option value='11:00am'>11:00 am</option>
+                <option value='11:30am'>11:30 am</option>
+                <option value='12:00pm'>12:00 pm</option>
+                <option value='12:30pm'>12:30 pm</option>
+                <option value='1:00pm'>1:00 pm</option>
+                <option value='1:30pm'>1:30 pm</option>
+                <option value='2:00pm'>2:00 pm</option>
+                <option value='2:30pm'>2:30 pm</option>
+                <option value='3:00pm'>3:00 pm</option>
+                <option value='3:30pm'>3:30 pm</option>
+                <option value='4:00pm'>4:00 pm</option>
+                <option value='4:30pm'>4:30 pm</option>
+                <option value='5:00pm'>5:00 pm</option>
+                <option value='5:30pm'>5:30 pm</option>
+                <option value='6:00pm'>6:00 pm</option>
+              </select>
+            </div>
+            <div class='form-group'>
+            <button type='submit' class='form-control'>Book</button>
+          </div>
+        </div>
+        </form>
+        <h1 class='thankYou' style='display:none;'>Thank you for booking.</h1>
+      </section>
+
+      <section id='style'>
         <h3>Style</h3>
         <div class='row'>
           <div class='col-md-3'>
@@ -200,79 +248,7 @@
         </div>
       </section>
 
-      <section>
-        <h3>Book</h3>
-        <form name='submit-to-google-sheet'>
-          <div class='group'>
-            <input type='text' name='name'>
-            <span class='highlight'></span>
-            <span class='bar'></span>
-            <label>Name</label>
-          </div>
-
-          <div class='group'>
-            <input type='email' name='email'>
-            <span class='highlight'></span>
-            <span class='bar'></span>
-            <label>Email</label>
-          </div>
-
-          <div class='group'>
-            <input type='number' name='phoneNumber'>
-            <span class='highlight'></span>
-            <span class='bar'></span>
-            <label>Phone Number</label>
-          </div>
-
-          <button type='submit' class='button buttonBlue'>Book</button>
-        </form>
-        <!-- <form class='form-horizontal' name='submit-to-google-sheet'>
-          <div class='form-row'>
-            <div class='form-group col-md-5'>
-              <input class='form-control' placeholder='First Name' type='text' name='firstName'>
-            </div>
-            <div class='form-group col-md-5'>
-              <input type='text' class='form-control' name='lastName' placeholder='Last Name'>
-            </div>
-            <div class='form-group col-md-2'>
-              <input type='number' class='form-control' name='phoneNumber' placeholder='Phone Number'>
-            </div>
-          </div>
-          <div class='form-row'>
-            <div class='form-group col-md-6'>
-              <input type='email' name='email' class='form-control' placeholder='Email'>
-            </div>
-            <div class='form-group col-md-3'>
-              <input type='date' name='date' class='form-control'>
-            </div>
-            <div class='form-group col-md-3'>
-              <select name='time' class='form-control'>
-                <option value='' selected disabled>Please Choose a Time</option>
-                <option value='10:00am'>10:00 am</option>
-                <option value='10:30am'>10:30 am</option>
-                <option value='11:00am'>11:00 am</option>
-                <option value='11:30am'>11:30 am</option>
-                <option value='12:00pm'>12:00 pm</option>
-                <option value='12:30pm'>12:30 pm</option>
-                <option value='1:00pm'>1:00 pm</option>
-                <option value='1:30pm'>1:30 pm</option>
-                <option value='2:00pm'>2:00 pm</option>
-                <option value='2:30pm'>2:30 pm</option>
-                <option value='3:00pm'>3:00 pm</option>
-                <option value='3:30pm'>3:30 pm</option>
-                <option value='4:00pm'>4:00 pm</option>
-                <option value='4:30pm'>4:30 pm</option>
-                <option value='5:00pm'>5:00 pm</option>
-                <option value='5:30pm'>5:30 pm</option>
-                <option value='6:00pm'>6:00 pm</option>
-              </select>
-            </div>
-          </div>
-          <button type='submit' class='btn btn-default'>Book</button>
-        </form> -->
-      </section>
-
-      <section>
+      <section id='location'>
         <h3>Location</h3>
         <div class='row'>
           <div class='col-md-9'>
@@ -291,7 +267,6 @@
     </div>
     <footer>
       Salon Retro &copy;2018
-      <a href="test.html">Testing</a>
     </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
