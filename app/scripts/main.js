@@ -31,10 +31,11 @@ $(document).ready(function(){
     if(this.hash !== ''){
       e.preventDefault();
       var hash = this.hash;
+
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-        window.location.hash = hash - 100;
+        window.location.hash = hash;
       });
     }
   });
