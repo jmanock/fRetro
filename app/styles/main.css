@@ -82,9 +82,6 @@ footer{
 section{
   margin-bottom:20px;
 }
-form{
-  margin-left:10%;
-}
 a{
   color:#4b0082;
 }
@@ -113,8 +110,16 @@ a:hover{
   color:#e0e0e0;
   text-decoration:underline;
 }
-
+button{
+  cursor:pointer;
+}
 input, select, button{
   background-color:#616161 !important;
   color:#fff !important;
+}
+input::placeholder{
+  color:#fff !important;
+}
+button:hover{
+  background-color:#424242 !important;
 }
