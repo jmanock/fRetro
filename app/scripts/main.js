@@ -27,16 +27,27 @@ function thankYou(){
 }
 
 $(document).ready(function(){
-  $('a').on('click', function(e){
-    if(this.hash !== ''){
-      e.preventDefault();
-      var hash = this.hash;
+  // $('a').on('click', function(e){
+  //   if(this.hash !== ''){
+  //     e.preventDefault();
+  //     var hash = this.hash;
+  //
+  //     $('html, body').animate({
+  //       scrollTop: $(hash).offset().top - 80
+  //     }, 800, function(){
+  //       window.location.hash = hash;
+  //     });
+  //   }
+  // });
 
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
+  $('a').on('click', function(e){
+    e.preventDefault();
+    var target = this.hash;
+    var $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop':$target.offset().top - 85
+    }, 900, 'swing', function(){
+      // window.location.hash = target;
+    })
+  })
 });
