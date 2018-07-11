@@ -38,3 +38,17 @@ $(document).ready(function(){
     });
   });
 });
+
+function DisableThur(date){
+  var day = date.getDay();
+  if(day === 4){
+    return [false];
+  }else{
+    return [true];
+  }
+}
+$(function(){
+  $('#datepicker').datepicker({
+    beforeShowDay: DisableThur
+  });
+});
