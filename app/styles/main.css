@@ -12,9 +12,6 @@ nav{
   font-family:'Quicksand';
 }
 .navbar{
-  /* background-color:#aa1111 !important; */
-  /* background-color:#898e8c !important; */
-  /* background-color:#555 !important; */
   background-color:#424242 !important;
 }
 .navbar-brand{
@@ -40,7 +37,6 @@ nav{
 }
 h3{
   color:#f48fb1;
-  /* color:#dda0dd; */
 }
 footer{
   text-align:center;
@@ -104,7 +100,6 @@ a:hover{
 }
 .add{
   color:#e0e0e0;
-  /* color:#f48fb1; */
 }
 .add, .headPhone{
   font-family:'Quicksand';

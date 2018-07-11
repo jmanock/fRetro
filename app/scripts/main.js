@@ -19,6 +19,7 @@ form.addEventListener('submit', e => {
     .then(response => console.log('Success!', response), thankYou())
     .catch(error => console.error('Error!', error.message));
 });
+// Need to figure out how to block dates
 function thankYou(){
   $(document).ready(function(){
     $('form').hide();
